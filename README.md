@@ -17,5 +17,3 @@ DustJourney is a simple 3D endless runner prototype built with **SceneKit** for 
 1. Open `DustJourney.xcodeproj` in Xcode.
 2. Select an iOS simulator or device and build/run (⌘+R).
 3. Tap **Start** to begin a run or **Login** to open the demo popup.
-
-> Note: This repository is public. The iOS toolchain is not available in this environment, so runtime behavior has not been verified here.
