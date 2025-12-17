@@ -20,6 +20,8 @@ DustJourney is a simple 3D endless runner prototype built with **SceneKit** for 
 
 ## Web demo
 A WebGL/Three.js port that mirrors the iOS prototype lives in `web/`.
+## Web demo
+A WebGL/Three.js port that mirrors the iOS prototype lives in `web/`.
 
 - **Sandbox (publish-ready)**: deploy the `web` folder to GitHub Pages/Netlify/Codesandbox and use the published URL for embedding. For GitHub Pages after pushing this branch, enable Pages on the main branch with `/web` as the source; the resulting URL will look like:<br>
   `https://<your-github-username>.github.io/dust-journey/web/`
@@ -28,7 +30,7 @@ A WebGL/Three.js port that mirrors the iOS prototype lives in `web/`.
 
   ```html
   <iframe
-    src="https://<your-github-username>.github.io/dust-journey/web/"
+    src="https://stellar-pothos-86cd44.netlify.app/"
     width="100%"
     height="640"
     style="border: 1px solid #111; border-radius: 12px;"
