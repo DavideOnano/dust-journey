@@ -37,7 +37,7 @@ A WebGL/Three.js port that mirrors the iOS prototype lives in `web/`.
     allowfullscreen
   ></iframe>
   ```
-- **Diretto (per GitHub README)**: [Apri la demo su Netlify](https://stellar-pothos-86cd44.netlify.app/).
+- **Try it out!**: [Apri la demo su Netlify](https://stellar-pothos-86cd44.netlify.app/).
 - **Local run**:
   1. `cd web`
   2. Serve statically (e.g., `python -m http.server 4173` or `npx serve .`)
