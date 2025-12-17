@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DustJourney Web</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <main id="app">
+    <div id="canvas-container"></div>
+
+    <section id="menu" class="panel">
+      <h1>DustJourney Web</h1>
+      <p>Replica WebGL del prototipo SceneKit.</p>
+      <div class="actions">
+        <button id="start-btn" class="primary">Start</button>
+        <button id="login-btn" class="secondary">Login</button>
+      </div>
+      <p class="hint">Usa le frecce direzionali o A/D per spostarti. Premi Stop per terminare.</p>
+    </section>
+
+    <section id="hud">
+      <button id="stop-btn" class="ghost">Stop</button>
+      <div class="chips">
+        <span id="speed-chip" class="chip">Speed: 0.10</span>
+        <span id="distance-chip" class="chip">Distanza: 0</span>
+      </div>
+    </section>
+
+    <section id="message" class="panel hidden">
+      <h2 id="message-title"></h2>
+      <p id="message-body"></p>
+      <div class="actions">
+        <button id="restart-btn" class="primary">Riprova</button>
+        <button id="menu-btn" class="secondary">Menu</button>
+      </div>
+    </section>
+
+    <dialog id="login-dialog">
+      <form method="dialog">
+        <h3>Login</h3>
+        <label>Username
+          <input id="login-username" name="username" autocomplete="username" required>
+        </label>
+        <label>Password
+          <input id="login-password" name="password" type="password" autocomplete="current-password" required>
+        </label>
+        <div class="actions">
+          <button value="cancel" class="ghost">Annulla</button>
+          <button id="login-submit" value="submit" class="primary">Accedi</button>
+        </div>
+      </form>
+    </dialog>
+  </main>
+
+  <script type="module" src="./main.js"></script>
+</body>
+</html>

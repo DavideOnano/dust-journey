@@ -17,3 +17,31 @@ DustJourney is a simple 3D endless runner prototype built with **SceneKit** for 
 1. Open `DustJourney.xcodeproj` in Xcode.
 2. Select an iOS simulator or device and build/run (⌘+R).
 3. Tap **Start** to begin a run or **Login** to open the demo popup.
+
+## Web demo
+A WebGL/Three.js port that mirrors the iOS prototype lives in `web/`.
+
+- **Sandbox (publish-ready)**: deploy the `web` folder to GitHub Pages/Netlify/Codesandbox and use the published URL for embedding. For GitHub Pages after pushing this branch, enable Pages on the main branch with `/web` as the source; the resulting URL will look like:<br>
+  `https://<your-github-username>.github.io/dust-journey/web/`
+
+- **Embed example** (replace the URL above once published):
+
+  ```html
+  <iframe
+    src="https://<your-github-username>.github.io/dust-journey/web/"
+    width="100%"
+    height="640"
+    style="border: 1px solid #111; border-radius: 12px;"
+    allowfullscreen
+  ></iframe>
+  ```
+
+- **Local run**:
+  1. `cd web`
+  2. Serve statically (e.g., `python -m http.server 4173` or `npx serve .`)
+  3. Open `http://localhost:4173/` (or the served URL) and click **Start**.
+
+- **Controls/UX parity**:
+  - **Start/Login** overlay matching the SceneKit menu (login writes credentials to the console).
+  - Arrow keys or **A/D** to move left/right; **Stop** halts the run and shows the Game Over panel.
+  - Increasing speed over time, periodic obstacle spawning, collisions with Game Over, and completion when reaching the end of the track.
